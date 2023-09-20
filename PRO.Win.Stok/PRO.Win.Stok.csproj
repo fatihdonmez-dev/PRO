@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8A12D5C4-959F-471D-9E7F-1B58C29891E2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PRO.Win.Stok</RootNamespace>
+    <AssemblyName>PRO.Win.Stok</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v16.1.Wizard, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v16.1.UI, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v16.1.Extensions, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PRO.Data.Stok">
+      <HintPath>..\PRO.Data.Stok\obj\Debug\PRO.Data.Stok.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmKategoriEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKategoriEkle.Designer.cs">
+      <DependentUpon>frmKategoriEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStokGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStokGiris.Designer.cs">
+      <DependentUpon>frmStokGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStokGrup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStokGrup.Designer.cs">
+      <DependentUpon>frmStokGrup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStokGrupTree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStokGrupTree.Designer.cs">
+      <DependentUpon>frmStokGrupTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStokKart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStokKart.Designer.cs">
+      <DependentUpon>frmStokKart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmKategoriEkle.resx">
+      <DependentUpon>frmKategoriEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStokGiris.resx">
+      <DependentUpon>frmStokGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStokGrup.resx">
+      <DependentUpon>frmStokGrup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStokGrupTree.resx">
+      <DependentUpon>frmStokGrupTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStokKart.resx">
+      <DependentUpon>frmStokKart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PRO.Control\PRO.Control.csproj">
+      <Project>{1c370dec-36de-458f-911a-a453f7ece39c}</Project>
+      <Name>PRO.Control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PRO.Data.Global\PRO.Data.Global.csproj">
+      <Project>{888f707e-a658-4504-9087-539c974d36d1}</Project>
+      <Name>PRO.Data.Global</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PRO.Data\PRO.Data.csproj">
+      <Project>{0a96440d-ad3c-4fdd-af17-3f701d934e64}</Project>
+      <Name>PRO.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PRO.Global\PRO.Global.csproj">
+      <Project>{30fd4868-d48f-4f67-b36a-060df24e688c}</Project>
+      <Name>PRO.Global</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PRO.Win.Global\PRO.Win.Global.csproj">
+      <Project>{9c964181-626e-4ac4-abc2-6d1d90d88e5b}</Project>
+      <Name>PRO.Win.Global</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PRO.Win.Report\PRO.Report.csproj">
+      <Project>{179b81b5-3ad4-44b5-bf01-a7201afc5a8f}</Project>
+      <Name>PRO.Report</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

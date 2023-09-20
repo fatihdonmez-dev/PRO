@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AB39C052-0F65-4F4B-844E-C0620C7ABEDC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PRO.Master</RootNamespace>
+    <AssemblyName>PRO.Master</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWait.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWait.Designer.cs">
+      <DependentUpon>frmWait.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WaitForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaitForm1.Designer.cs">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWait.resx">
+      <DependentUpon>frmWait.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="WaitForm1.resx">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PRO.Control\PRO.Control.csproj">
+      <Project>{1c370dec-36de-458f-911a-a453f7ece39c}</Project>
+      <Name>PRO.Control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PRO.Data.Depo\PRO.Data.Depo.csproj">
+      <Project>{18f614e4-3f9c-41be-a727-87f7d5dc1335}</Project>
+      <Name>PRO.Data.Depo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PRO.Data.Finans\PRO.Data.Finans.csproj">
+      <Project>{9a49edb7-07d8-4933-a8ba-a008a17932cd}</Project>
+      <Name>PRO.Data.Finans</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PRO.Data.Global\PRO.Data.Global.csproj">
+      <Project>{888f707e-a658-4504-9087-539c974d36d1}</Project>
+      <Name>PRO.Data.Global</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PRO.Data.Siparis\PRO.Data.Siparis.csproj">
+      <Project>{bf46a85e-a4db-47dd-89c7-16f7a6577bdb}</Project>
+      <Name>PRO.Data.Siparis</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PRO.Data.Stok\PRO.Data.Stok.csproj">
+      <Project>{8572d127-cf70-4efc-9879-4f39071492e4}</Project>
+      <Name>PRO.Data.Stok</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PRO.Data\PRO.Data.csproj">
+      <Project>{0a96440d-ad3c-4fdd-af17-3f701d934e64}</Project>
+      <Name>PRO.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PRO.Global\PRO.Global.csproj">
+      <Project>{30fd4868-d48f-4f67-b36a-060df24e688c}</Project>
+      <Name>PRO.Global</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PRO.System\PRO.Sistem.csproj">
+      <Project>{3f7870f3-b097-4deb-b73c-ce6daa592d0f}</Project>
+      <Name>PRO.Sistem</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PRO.Win.Depo\PRO.Win.Depo.csproj">
+      <Project>{4e1331f7-0176-4b2c-9701-3ed580c03323}</Project>
+      <Name>PRO.Win.Depo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PRO.Win.Finans\PRO.Win.Finans.csproj">
+      <Project>{3ece2579-58c7-4464-bf5e-4f5b7ff998eb}</Project>
+      <Name>PRO.Win.Finans</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PRO.Win.Global\PRO.Win.Global.csproj">
+      <Project>{9c964181-626e-4ac4-abc2-6d1d90d88e5b}</Project>
+      <Name>PRO.Win.Global</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PRO.Win.Report\PRO.Report.csproj">
+      <Project>{179b81b5-3ad4-44b5-bf01-a7201afc5a8f}</Project>
+      <Name>PRO.Report</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PRO.Win.Siparis\PRO.Win.Siparis.csproj">
+      <Project>{e7d3a3dd-2153-4980-b006-3cf088b9c659}</Project>
+      <Name>PRO.Win.Siparis</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PRO.Win.Stok\PRO.Win.Stok.csproj">
+      <Project>{8a12d5c4-959f-471d-9e7f-1b58c29891e2}</Project>
+      <Name>PRO.Win.Stok</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Fakes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Onaylandi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\onayIptal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check-icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
